@@ -17,3 +17,26 @@ let user: { name: string; age: number } = { name: "tamanna", age: 18 };
 let tup: [string, number] = ["tamanna", 18]; //tis is a tuple that has only 2 elements first is of type string and second of type number
 
 //its full of error that saying something like block scope we will come to thiss soonnn
+
+let badPractice; //any let badPractice:any;
+
+badPractice = 5;
+badPractice = "hehe";
+
+//we are again writing the js means we are cutting off typescripts al super powers so we should never use it
+
+function print(): void {
+	console.log("hey wecome!");
+	// retrun 1; //error as i have said that the return type will be void
+}
+
+let welcome = print(); //if i hover to the welcome variable its showing the type void.
+
+enum statusCodes {
+	notFound = 404,
+	success = 200,
+} //
+
+console.log(statusCodes.success);
+
+//what are enums are written in notes at https://ribbon-buffalo-067.notion.site/Typescript-134fee81f6468004ab0ec039783e73d0?pvs=4
